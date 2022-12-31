@@ -1,0 +1,23 @@
+01:1B Set max temp
+04:00 Set mode (normal or weather controlled)
+05:04 Set enable warm water
+07:CC set max burner power
+73:52 set ?
+78:04 set ?
+
+81:44 get max watertemp setting  (=setting on the boiler)
+82:00 get status (burner, warm water, etc)
+84:55 
+8A:B1 get external (outside?) temp
+90:A0 get index knob on boiler  (=maintenance mode?)
+93:00 get pump on/off
+A3:07 get display code
+A4:15 get output water temp
+C9:00 
+DE:8C 
+
+
+
+No A6 datagrams = return temp
+No A8 datagrams = warmwater current temp
+No AC datagrams = warmwater selected temp
